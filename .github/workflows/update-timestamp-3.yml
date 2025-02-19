@@ -21,7 +21,9 @@ jobs:
       - name: Commit and push changes
         run: |
           git config --global user.name 'dharambudh1'
-          git config --global user.email 'dharambudh1@gmail.com'          
+          git config --global user.email 'dharambudh1@gmail.com'           
+          git config --global pull.rebase false
+
           git add timestamp.txt
           git commit -m "Update timestamp.txt" || echo "No changes to commit"
           git pull
