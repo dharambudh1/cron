@@ -24,6 +24,7 @@ jobs:
           git config --global user.email 'dharambudh1@gmail.com'          
           git add timestamp.txt
           git commit -m "Update timestamp.txt" || echo "No changes to commit"
+          git pull
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
